@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>assending</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    
+	<input type="number" value="" placeholder="A" id="aa">
+	<input type="number" value="" placeholder="B" id="bb">
+	<input type="number" value="" placeholder="C" id="cc">
+	<button type="button" id="btn">click</button>
+	<h1 id="out"></h1>
+	
+<script>
+
+	let but=document.getElementById("btn");
+	btn.addEventListener("click",myFunction);
+	
+	function myFunction(){
+		var a=document.getElementById("aa").value;
+		var b=document.getElementById("bb").value;
+		var c=document.getElementById("cc").value;
+	
+			if(a>b && a>c){
+				if(b>c){
+					document.getElementById("out").innerHTML=c+b+a;
+				}
+				else{
+					document.getElementById("out").innerHTML=b+c+a;
+				}
+			}
+			else if(b>a && b>c){
+				if(c>a){
+					document.getElementById("out").innerHTML=a+c+b;
+				}
+				else{
+					document.getElementById("out").innerHTML=c+a+b;
+				}
+			}
+			else if(c>a && c>b){
+				if(a>b){
+					document.getElementById("out").innerHTML=b+a+c;
+				}
+				else{
+					document.getElementById("out").innerHTML=a+b+c;
+				}
+			}
+	}
+</script>
+
+
+</body>
+</html>
